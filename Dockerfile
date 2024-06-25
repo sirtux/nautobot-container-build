@@ -1,4 +1,4 @@
-FROM networktocode/nautobot:2.1.7-py3.11
+FROM networktocode/nautobot:2.2.5-py3.11
 
 RUN pip install nautobot-bgp-models
 RUN pip install nautobot-secrets-providers[hashicorp]
