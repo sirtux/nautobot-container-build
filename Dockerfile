@@ -1,4 +1,4 @@
-FROM networktocode/nautobot:2.3.2-py3.11
+FROM networktocode/nautobot:2.3.6-py3.12
 
 RUN pip install nautobot-bgp-models
 # I feel bad, but i'm also lazy
