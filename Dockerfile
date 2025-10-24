@@ -1,5 +1,5 @@
-FROM networktocode/nautobot:2.4.12-py3.11
+FROM networktocode/nautobot:2.4.20-py3.12
 
 RUN pip install nautobot-bgp-models pykeadhcp
 # I feel bad, but i'm also lazy
-COPY oauth_pipeline.py /usr/local/lib/python3.11/site-packages/nautobot
+COPY oauth_pipeline.py /usr/local/lib/python3.12/site-packages/nautobot
