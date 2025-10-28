@@ -1,4 +1,4 @@
-FROM networktocode/nautobot:2.4.20-py3.12
+FROM networktocode/nautobot:2.4.21-py3.12
 
 RUN pip install nautobot-bgp-models pykeadhcp
 # I feel bad, but i'm also lazy
