@@ -11,8 +11,9 @@ def add_groups(response, user, backend, *args, **kwargs):
 
     # Add all groups from oAuth token
     for group in groups:
-        group, created = Group.objects.get_or_create(name=group)
-        group.user_set.add(user)
+        if group.startswith("nautobot"):
+            group, created = Group.objects.get_or_create(name=group)
+            group.user_set.add(user)
 
 def remove_groups(response, user, backend, *args, **kwargs):
     try:
